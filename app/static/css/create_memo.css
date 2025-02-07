@@ -1,0 +1,19 @@
+#create_memo {
+    .button {
+        margin: 20px 0;
+    }
+
+        /* 重要度と締切日の間隔を調整 */
+    label[for="priority"],
+    label[for="due_date"] {
+        margin-top: 10px; /* 上の余白を追加 */
+    }
+
+    /* 重要度と締切日の間隔をさらに広げたい場合 */
+    select#priority {
+        margin-bottom: 10px; /* 下の余白を追加 */
+    }
+
+    
+
+}

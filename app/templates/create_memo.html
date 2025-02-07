@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RapMan - 新規作成</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/create_memo.css') }}">
+</head>
+<body>
+    <div id="create_memo" class="container">
+        <h1 class="title-border">ToDoメモ</h1>
+
+        <form action="{{ url_for('create_memo') }}" method="POST" class="modern-form">
+            <label for="title">タスク名</label>
+            <input type="text" id="title" name="title" required>
+            <label for="content">メモ詳細</label>
+            <textarea id="content" name="content" required></textarea>
+            <label for="priority">重要度</label>
+            <select name="priority" id="priority">
+                <option value="high">★★★</option>
+                <option value="medium">★★</option>
+                <option value="low">★</option>
+            </select>
+            <label for="due_date">締切日</label>
+            <input type="date" id="due_date" name="due_date" required>
+           
+            <button type="submit" class="button">追加</button>
+            <a href="{{ url_for('index') }}" class="button">キャンセル</a>
+        </form>
+
+        
+    </div>
+</body>
+</html>
+

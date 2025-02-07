@@ -1,0 +1,70 @@
+/* index css */
+#index {
+    h1 {
+        text-align: center;
+        color: #000000; 
+    }
+
+    .sub-title {
+        margin-top: 4px;
+        margin-bottom: 16px;
+        text-align: center;
+        opacity: 0.8;
+        color: #000000; 
+    }
+
+    .delete-button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 24px; 
+    }
+    
+    .button-container {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px; 
+    }
+
+    .button {
+        position: fixed; /* 画面に対して固定 */
+        bottom: 20px;  /* 画面下からの距離 */
+        right: 20px;  /* 画面右からの距離 */
+        width: 50px; /* ボタンの幅 */
+        height: 50px; /* ボタンの高さ */
+        display: flex; /* アイコンを中央に配置 */
+        justify-content: center; /* アイコンを中央に配置 */
+        align-items: center; /* アイコンを中央に配置 */
+        border-radius: 50%; /* ボタンを丸くする */
+        background-color: #ffffff; /* 背景色 */
+        color: #000; /* 文字色 */
+        text-decoration: none; /* 下線を消す */
+        font-size: 24px; /* アイコンのサイズ */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 影をつける */
+        transition: background-color 0.3s; /* 背景色の遷移をスムーズに */
+        border: 3px solid #000; /* ボタンの外枠を黒に */
+    }
+
+    .button:hover {
+        background: #c4c4c4;
+    }
+
+    .fas {
+        color: #000000;
+    }
+
+    .card {
+        margin-bottom: 24px;
+        text-align: left;
+        color: #FFF;
+    }
+
+        a {
+            font-size: large;
+            font-weight: bold;
+            text-decoration: solid;
+            margin-bottom:4px;
+        }
+    }
+
+    
